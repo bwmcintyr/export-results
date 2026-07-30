@@ -1,0 +1,26 @@
+aap_organizations: 
+  - name: database
+    description: 
+    max_hosts: 0
+    default_environment: 
+    galaxy_credentials: ['Ansible Galaxy']
+  - name: Default
+    description: 
+    max_hosts: 0
+    default_environment: 
+    galaxy_credentials: ['aap26-certified', 'aap26-validated', 'Ansible Galaxy']
+  - name: DEMO
+    description: 
+    max_hosts: 0
+    default_environment: 
+    galaxy_credentials: ['Ansible Galaxy']
+  - name: Splunk
+    description: 
+    max_hosts: 0
+    default_environment: 
+    galaxy_credentials: ['Ansible Galaxy']
+  - name: WebApp
+    description: 
+    max_hosts: 0
+    default_environment: 
+    galaxy_credentials: ['Ansible Galaxy']

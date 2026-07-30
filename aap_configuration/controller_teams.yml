@@ -1,0 +1,13 @@
+aap_teams:
+  - name: database-admins
+    description: 
+    organization: database
+  - name: demo-admins
+    description: 
+    organization: DEMO
+  - name: splunk-admins
+    description: 
+    organization: Splunk
+  - name: webapp-admins
+    description: 
+    organization: WebApp

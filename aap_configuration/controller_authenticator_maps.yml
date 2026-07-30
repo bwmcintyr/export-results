@@ -1,0 +1,93 @@
+gateway_authenticator_maps:
+  - name: AUTH_LDAP_TEAM_demo-admins_MAP
+    authenticator: AUTH_LDAP
+    order: 0
+    map_type: team
+    role: 'Team Member'
+    organization: DEMO
+    team: demo-admins
+    revoke: True
+    triggers:
+      groups: 
+        has_or: ['cn=demo-admins,ou=groups,dc=example,dc=com']
+    state: present
+  - name: AUTH_LDAP_TEAM_splunk-admins_MAP
+    authenticator: AUTH_LDAP
+    order: 0
+    map_type: team
+    role: 'Team Member'
+    organization: Splunk
+    team: splunk-admins
+    revoke: True
+    triggers:
+      groups: 
+        has_or: ['cn=splunk-admins,ou=groups,dc=example,dc=com']
+    state: present
+  - name: AUTH_LDAP_TEAM_webapp-admins_MAP
+    authenticator: AUTH_LDAP
+    order: 0
+    map_type: team
+    role: 'Team Member'
+    organization: WebApp
+    team: webapp-admins
+    revoke: True
+    triggers:
+      groups: 
+        has_or: ['cn=webapp-admins,ou=groups,dc=example,dc=com']
+    state: present
+  - name: AUTH_LDAP_TEAM_database-admins_MAP
+    authenticator: AUTH_LDAP
+    order: 0
+    map_type: team
+    role: 'Team Member'
+    organization: database
+    team: database-admins
+    revoke: True
+    triggers:
+      groups: 
+        has_or: ['cn=database-admins,ou=groups,dc=example,dc=com']
+    state: present
+  - name: AUTH_LDAP_ORG_DEMOUSER_MAP
+    authenticator: AUTH_LDAP
+    order: 1
+    map_type: organization
+    role: 'Organization Member'
+    organization: DEMO
+    revoke: False
+    triggers:
+      groups: 
+        has_or: ['CN=demo,OU=groups,DC=example,DC=com']
+    state: present
+  - name: AUTH_LDAP_ORG_SplunkUSER_MAP
+    authenticator: AUTH_LDAP
+    order: 1
+    map_type: organization
+    role: 'Organization Member'
+    organization: Splunk
+    revoke: False
+    triggers:
+      groups: 
+        has_or: ['CN=splunk,OU=groups,DC=example,DC=com']
+    state: present
+  - name: AUTH_LDAP_ORG_WebAppUSER_MAP
+    authenticator: AUTH_LDAP
+    order: 1
+    map_type: organization
+    role: 'Organization Member'
+    organization: WebApp
+    revoke: False
+    triggers:
+      groups: 
+        has_or: ['CN=webapp,OU=groups,DC=example,DC=com']
+    state: present
+  - name: AUTH_LDAP_ORG_databaseUSER_MAP
+    authenticator: AUTH_LDAP
+    order: 1
+    map_type: organization
+    role: 'Organization Member'
+    organization: database
+    revoke: False
+    triggers:
+      groups: 
+        has_or: ['CN=database,OU=groups,DC=example,DC=com']
+    state: present
