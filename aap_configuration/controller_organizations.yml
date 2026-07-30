@@ -8,7 +8,7 @@ aap_organizations:
     description: 
     max_hosts: 0
     default_environment: 
-    galaxy_credentials: ['aap26-certified', 'aap26-validated', 'Ansible Galaxy']
+    galaxy_credentials: ['Ansible Galaxy', 'aap26-certified', 'aap26-validated']
   - name: DEMO
     description: 
     max_hosts: 0
