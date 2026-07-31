@@ -11,6 +11,10 @@ aap_organizations:
     description: 
     max_hosts: 0
     galaxy_credentials: ['Ansible Galaxy']
+  - name: F5 Team
+    description: load balance
+    max_hosts: 0
+    galaxy_credentials: ['Ansible Galaxy']
   - name: Network Automation
     description: network
     max_hosts: 0
